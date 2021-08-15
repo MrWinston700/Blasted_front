@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .App, header, footer {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
