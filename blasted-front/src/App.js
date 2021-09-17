@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import sample from './background_vid.mp4'
 
 
 function App() {
-  return (
+  return ( 
     <div className="App">
-      <video autoplay muted loop src="../video/background_vid.mp4" id="myVideo"/>
-      <h1>yo</h1>
+      <video autoPlay muted loop id="myVideo">
+        <source src={sample} type="video/mp4" />
+      </video>
     </div>
   );
 }
