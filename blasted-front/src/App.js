@@ -12,11 +12,11 @@ function App() {
   return ( 
     <div className="App">
       <Router>
-      <Navbar/>
+        <Navbar/>
       </Router>
-      <video autoPlay muted loop id="myVideo">
-        <source src={sample} type="video/mp4" />
-      </video>
+        <video autoPlay muted loop id="myVideo">
+          <source src={sample} type="video/mp4" />
+        </video>
     </div>
   );
 }

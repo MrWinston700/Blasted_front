@@ -24,6 +24,7 @@ class Navbar extends Component {
   render() {
     return (
       <div id="head">
+        <h1>Blasted</h1>
         <nav>
         <ul>
         <NavLink
