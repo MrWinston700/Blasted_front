@@ -37,15 +37,9 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .App, header, footer {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
 
-h1 {
+
+#heading {
   padding-left: 55px;
   width: 180px;
   font-size: 70px;
@@ -67,6 +61,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 100px;
+  margin: 0;
   opacity: 1;
   line-height: 50px;
 }
@@ -100,3 +95,72 @@ nav ul{
 #myVideo {
   z-index:-1;
 }
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .App, header, footer {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    display: grid;
+    grid-template-columns: 1fr;
+  
+  }
+
+  #heading {
+   
+  }
+
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+
+ 
+
+
+}
+
+@media screen and (max-height: 1000px) {
+  .App, header, footer {
+    width: 100%; /* The width is 100%, when the viewport is 1000px or smaller */
+    display: grid;
+    grid-template-columns: 1fr;
+  
+  }
+
+  #heading {
+   
+  }
+
+  #myVideo {
+    position: fixed;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+
+  nav ul{
+    height: 50px;
+    padding-top: 20px;
+    margin-right: 0px;
+   
+  }
+
+  .navLinks {
+    padding: 0px;
+  }
+
+ 
+
+
+}
+
