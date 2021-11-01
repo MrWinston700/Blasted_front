@@ -23,8 +23,8 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div id="head">
-        <h1 id="heading">Blasted</h1>
+      <div id="nav_head">
+        <h1 id="nav_heading">Blasted</h1>
         <nav>
         <ul>
         <NavLink
