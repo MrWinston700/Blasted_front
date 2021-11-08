@@ -11,12 +11,22 @@ import Navbar from './components/Navbar';
 function App() {
   return ( 
     <div className="App">
-      <Router>
-        <Navbar/>
-      </Router>
+      <div id="app_head">
+        <Router>
+          <Navbar/>
+        </Router>
         <video autoPlay muted loop id="myVideo">
           <source src={sample} type="video/mp4" />
         </video>
+      </div>
+
+      <div id="app_body">
+
+      </div>
+
+      <div id="app_foot">
+
+      </div>
     </div>
   );
 }
