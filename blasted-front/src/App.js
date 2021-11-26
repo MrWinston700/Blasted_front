@@ -5,8 +5,10 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import sample from './background_vid.mp4'
-import Navbar from './components/Navbar'; 
-
+import Navbar from './components/Navbar';
+import CommitmentToSafety from './components/commitmentToSafety';
+import EmissionTarget from './components/emissionTarget'; 
+import Fleet from './components/fleet';
 
 function App() {
   return ( 
@@ -21,7 +23,9 @@ function App() {
       </div>
 
       <div id="app_body">
-
+        <CommitmentToSafety/>
+        <EmissionTarget/>
+        <Fleet/>
       </div>
 
       <div id="app_foot">
