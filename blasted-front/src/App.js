@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import CommitmentToSafety from './components/commitmentToSafety';
 import EmissionTarget from './components/emissionTarget'; 
 import Fleet from './components/fleet';
+import Footer from './components/footer';
 
 function App() {
   return ( 
@@ -29,7 +30,7 @@ function App() {
       </div>
 
       <div id="app_foot">
-
+        <Footer/>
       </div>
     </div>
   );

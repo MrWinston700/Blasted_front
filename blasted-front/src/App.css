@@ -109,15 +109,72 @@ nav ul{
 #app_body {
   position: relative;
   width: 100%;
-  height: 1250px;
+  min-height: 100px;
+  overflow: hidden;
   background-color:  #f6f6f6 ;
+}
+
+
+#commitmentToSafety {
+  background-color: #2980B9;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.safety_div {
+  overflow: hidden;
+}
+
+.left_content {
+  display: flex;
+  justify-content: left;
+}
+
+.right_content {
+  display: flex;
+  justify-content: right;
+}
+
+#our_pilot_img {
+  float: right;
+  width: 300px;
+  height: 200px;
+}
+
+#safe_plane_img {
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+
+
+
+#emissionTarget {
+  background-color: antiquewhite;
+  border: sienna;
+  height: 100vh;
+}
+
+#fleet {
+  background-color: pink;
+  height: 100vh;
 }
 
 #app_foot {
   width: 100%;
   height: 225px;
   background-color: black;
+  text-decoration-color: #ddd;
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px) {
   .App, header, footer {
@@ -244,6 +301,9 @@ nav ul{
   }
 
 }
+
+
+
 
 @media screen and (max-height: 1000px) {
   .App, header, footer {
