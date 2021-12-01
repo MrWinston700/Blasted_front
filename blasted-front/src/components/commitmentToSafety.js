@@ -1,7 +1,7 @@
 import React from 'react';
 import our_pilot from '../our_pilot.jpg'
 import safe_plane from '../safe_plane.jpg'
-
+import maint from '../maint.jpg'
 
 
 const CommitmentToSafety = () => {
@@ -10,18 +10,18 @@ const CommitmentToSafety = () => {
       <h3>Commitment To Safety</h3>
 
       <div className="safety_div">
-        <p className="left_content">Our pilots endure rigorous training beyond FAA requirements to meet our standards.</p>
+        <p className="left_content">Training beyond FAA requirements to meet our standards.</p>
         <img src={our_pilot} id="our_pilot_img"></img>
       </div>
 
       <div className="safety_div">
-        <p className="right_content">We do not compromise on safety features of our fleet.</p>
+        <p className="right_content">No compromise on safety features.</p>
         <img src={safe_plane} id="safe_plane_img"></img>
       </div>
 
       <div className="safety_div">
-        <p className="left_content">We have shorter maintenance intervals than any other competitor in our fleet.</p>
-        <img></img>
+        <p className="left_content">We have shorter maintenance intervals.</p>
+        <img src={maint} id="maint_img"></img>
       </div>
       
     </div>
