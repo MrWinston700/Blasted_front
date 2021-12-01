@@ -10,9 +10,13 @@ const CommitmentToSafety = () => {
       <h3>Commitment To Safety</h3>
 
       <div className="safety_div">
-        <p className="left_content_headings">Training beyond FAA requirements to meet our standards.</p>
-        <p className="left_content">Our pilots are the very best at what they. We do both simulator and real world emergency training at critical flight phases so our pilots are never do an emergency for the first time</p>
-        <img src={our_pilot} id="our_pilot_img"></img>
+        <div>
+          <p className="left_content_headings">Training beyond FAA requirements to meet our standards.</p>
+          <p className="left_content">Our pilots are the very best at what they. We do both simulator and real world emergency training at critical flight phases so our pilots are never do an emergency for the first time</p>
+        </div>
+        <div>
+          <img src={our_pilot} id="our_pilot_img"></img>
+        </div>
       </div>
 
       <div className="safety_div">
