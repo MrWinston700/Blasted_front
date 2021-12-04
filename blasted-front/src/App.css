@@ -2,7 +2,8 @@
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-
+  font-family: "Source Sans Pro","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-weight: 300;
 }
 
 .App-logo {
@@ -48,6 +49,7 @@
   font-size: 70px;
   font-family: cursive;
   color: #726c6c;
+  font-weight: 300;
 }
 
 #myVideo {
@@ -170,7 +172,6 @@ h3 {
   left: 30px;
   color: #726c6c;
   margin: 0 auto;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .right_content_headings {
@@ -180,7 +181,7 @@ h3 {
   font-size: 20px;
   max-width: 700px;
   margin: 0 auto;
-  font-family: "Source Sans Pro","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  
 }
 
 .right_content {
@@ -193,7 +194,6 @@ h3 {
   height: 200px;
   color: #726c6c;
   margin: 0 auto;
-  font-family: "Source Sans Pro","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
 .safety_imgs {

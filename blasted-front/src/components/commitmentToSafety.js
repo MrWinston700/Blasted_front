@@ -32,7 +32,7 @@ const CommitmentToSafety = () => {
 
       <div className="safety_div">
         <div className="content_divs">
-          <p className="left_content_headings">We have shorter maintenance intervals.</p>
+          <p className="left_content_headings">Shorter maintenance intervals on our own fleet.</p>
           <p className="left_content">While the FAA and aircraft manufacturer requirements for maintenance are plausible, from experience from working with our maintenance team, we determined that some inspections should have shorter intervals, not particularly
           for safety reason, but to avoid delays for our customers and employees</p>
         </div>
