@@ -14,14 +14,14 @@ const CommitmentToSafety = () => {
           <p className="left_content_headings">Training beyond FAA requirements to meet our standards.</p>
           <p className="left_content">Our pilots are the very best at what they. We do both simulator and real world emergency training at critical flight phases so our pilots are never do an emergency for the first time</p>
         </div>
-        <div className="right_pic">
-        <img src={our_pilot} id="our_pilot_img"></img>
+        <div className="safety_pic_divs">
+        <img src={our_pilot} className="safety_imgs" alt="photograph of pilot"></img>
         </div>
       </div>
 
       <div className="safety_div">
-        <div className="right_pic">
-          <img src={safe_plane} id="safe_plane_img"></img>
+        <div className="safety_pic_divs">
+          <img src={safe_plane} className="safety_imgs" alt="photograph of aircraft"></img>
         </div>
         <div className="content_divs">
           <p className="right_content_headings">No compromise on safety features.</p>
@@ -36,8 +36,8 @@ const CommitmentToSafety = () => {
           <p className="left_content">While the FAA and aircraft manufacturer requirements for maintenance are plausible, from experience from working with our maintenance team, we determined that some inspections should have shorter intervals, not particularly
           for safety reason, but to avoid delays for our customers and employees</p>
         </div>
-        <div className="right_pic">  
-          <img src={maint} id="maint_img"></img>
+        <div className="safety_pic_divs">  
+          <img src={maint} className="safety_imgs" alt="photograph of aircraft in maintenance"></img>
         </div>      
       </div>
       

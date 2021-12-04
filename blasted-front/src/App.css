@@ -115,6 +115,7 @@ nav ul{
 }
 
 
+
 #commitmentToSafety {
   background-color: #2980B9;
   height: 180vh;
@@ -129,6 +130,7 @@ h3 {
   color: #726c6c;
   font-family: "Times New Roman", Times, serif;
   font-size: 35px;
+  margin-bottom: 100px;
 }
 
 .safety_div {
@@ -140,6 +142,13 @@ h3 {
   
 }
 
+.safety_pic_divs {
+  overflow: hidden;
+}
+
+.content_divs {
+  overflow: hidden;
+}
 
 .left_content_headings {
   display: flex;
@@ -147,7 +156,6 @@ h3 {
   align-items: center;
   font-size: 20px;
   max-width: 700px;
-  left: 30px;
   margin: 0 auto;
 }
 
@@ -165,22 +173,14 @@ h3 {
   font-family: "Times New Roman", Times, serif;
 }
 
-.right_pic {
-  overflow: hidden;
-}
-
-.content_divs {
-  overflow: hidden;
-}
-
 .right_content_headings {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
   max-width: 700px;
   margin: 0 auto;
+  font-family: "Source Sans Pro","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
 .right_content {
@@ -193,25 +193,14 @@ h3 {
   height: 200px;
   color: #726c6c;
   margin: 0 auto;
+  font-family: "Source Sans Pro","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
-#our_pilot_img {
-  width: auto;
-  height: auto;  
+.safety_imgs {
+  width: 95%;
+  height: 90%;  
   border-radius: 25px;
 
-}
-
-#safe_plane_img { 
-  width: auto;
-  height: auto;
-  border-radius: 25px;
-}
-
-#maint_img {
-  width: auto;
-  height: auto%;
-  border-radius: 25px;
 }
 
 
@@ -223,10 +212,14 @@ h3 {
   height: 100vh;
 }
 
+
+
 #fleet {
   background-color: pink;
   height: 100vh;
 }
+
+
 
 #app_foot {
   width: 100%;
