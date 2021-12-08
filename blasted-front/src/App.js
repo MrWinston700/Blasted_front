@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom';
 import './App.css';
-import sample from './background_vid.mp4'
+import sample from './background_vid2.mp4'
 import Navbar from './components/Navbar';
 import CommitmentToSafety from './components/commitmentToSafety';
 import EmissionTarget from './components/emissionTarget'; 
@@ -21,6 +21,8 @@ function App() {
         <video autoPlay muted loop id="myVideo">
           <source src={sample} type="video/mp4" />
         </video>
+        <p id="catch_phrase">Come blast with us</p>
+        <button id="quick_button">Quick booking</button>
       </div>
 
       <div id="app_body">
