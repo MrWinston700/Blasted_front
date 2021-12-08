@@ -21,6 +21,8 @@ function App() {
         <video autoPlay muted loop id="myVideo">
           <source src={sample} type="video/mp4" />
         </video>
+        <p id="catch_phrase">Come blast with us</p>
+        <button id="quick_button">Quick booking</button>
       </div>
 
       <div id="app_body">
