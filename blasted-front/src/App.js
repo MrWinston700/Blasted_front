@@ -18,10 +18,13 @@ function App() {
         <Router>
           <Navbar/>
         </Router>
+        
         <video autoPlay muted loop id="myVideo">
           <source src={sample} type="video/mp4" />
         </video>
-        <p id="catch_phrase">Come blast with us</p>
+       
+        <p id="catch_phrase">Have a blast with us</p>
+        <p id="call_us">call for inquiry: 977-777-9787</p>
         <button id="quick_button">Quick booking</button>
       </div>
 
