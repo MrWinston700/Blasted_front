@@ -46,15 +46,19 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.1);
+  
 }
 
 #nav_heading {
-  padding-left: 55px;
+  position: relative;
+  left: 100px;
   width: 180px;
   font-size: 70px;
   font-family: cursive;
-  color: #726c6c;
   font-weight: 300;
+  color: whitesmoke;
 }
 
 #myVideo {
@@ -63,6 +67,7 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index:-1;
 }
 
 
@@ -103,12 +108,8 @@ nav ul{
   color: red;
 }
 
-#myVideo {
-  z-index:-1;
-}
-
 #catch_phrase {
-  position: absolute;
+  position: relative;
   top: 30%;
   left: 12%;
   -ms-transform: translate(-50%, -50%);
@@ -116,12 +117,26 @@ nav ul{
   font-size: 40px;
   font-weight: 500;
   color: whitesmoke;
-  opacity: .7;
+  font-family: cursive;
+  }
+
+#call_us {
+  position: relative;
+  top: 70%;
+  left: 12%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 500;
+  color: whitesmoke; 
+  font-family: cursive;
 }
+
 
 #quick_button {
   background-color:  #004d00; /* Green */
   border: none;
+  border-radius: 4px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -241,6 +256,32 @@ h3 {
   background-color: antiquewhite;
   border: sienna;
   height: 100vh;
+  
+}
+
+#emission_divs_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.emission_divs {
+  height: 80vh;
+  background-color: aquamarine;
+  border-style: solid;
+  border-color: brown;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.emission_pics_divs {
+   
+  overflow: hidden;
+}
+
+.sustainable_imgs {
+  width: 95%;
+  height: 90%; 
 }
 
 
@@ -250,6 +291,26 @@ h3 {
   height: 100vh;
 }
 
+#fleet_planes_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fleet_content_divs {
+
+}
+
+.fleet_pics {
+
+}
+
+.fleet_content_divs_divs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20vh;
+  background-color: #726c6c;
+  overflow: hidden;
+}
 
 
 #app_foot {
