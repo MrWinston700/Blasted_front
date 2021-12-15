@@ -291,6 +291,26 @@ h3 {
   height: 100vh;
 }
 
+#fleet_planes_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fleet_content_divs {
+
+}
+
+.fleet_pics {
+
+}
+
+.fleet_content_divs_divs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20vh;
+  background-color: #726c6c;
+  overflow: hidden;
+}
 
 
 #app_foot {
