@@ -1,7 +1,7 @@
 import React from 'react';
-import our_pilot from '../our_pilot.jpg'
-import safe_plane from '../safe_plane.jpg'
-import maint from '../maint.jpg'
+import our_pilot from '../images/our_pilot.jpg'
+import safe_plane from '..//images/safe_plane.jpg'
+import maint from '../images/maint.jpg'
 
 
 const CommitmentToSafety = () => {

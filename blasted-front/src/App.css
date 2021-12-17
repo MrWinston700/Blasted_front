@@ -288,7 +288,7 @@ h3 {
 
 #fleet {
   background-color: pink;
-  height: 100vh;
+  height: 400vh;
 }
 
 #fleet_planes_container {
@@ -297,17 +297,22 @@ h3 {
 }
 
 .fleet_content_divs {
+  border-style: solid;
+  border-color: brown;
+}
 
+.fleet_pics_divs {
 }
 
 .fleet_pics {
-
+  width: 95%;
+  height: 90%; 
 }
 
 .fleet_content_divs_divs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 20vh;
+  height: 30vh;
   background-color: #726c6c;
   overflow: hidden;
 }

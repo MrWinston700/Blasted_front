@@ -1,7 +1,7 @@
 import React from 'react';
-import biofuel from '../biofuel.jpg'
-import sus from '../sus.jpg'
-import sustainable from '../sustainable.jpg'
+import biofuel from '../images/biofuel.jpg'
+import sus from '../images/sus.jpg'
+import sustainable from '../images/sustainable.jpg'
 
 const EmissionTarget = () => {
   return (
