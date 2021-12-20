@@ -2,6 +2,7 @@ import { render } from '@testing-library/react';
 import React, { Component } from 'react';
 // for now, just add some photos and make it look good
 import king_air from '../images/king_air.jpg'
+import ka350_int from '../images/ka350_int.jpg'
 
 class Fleet extends Component {
 
@@ -13,30 +14,21 @@ class Fleet extends Component {
     }
 
     showSlides(n) {
-    let i = 0;
-    const slides = document.getElementsByClassName("mySlides");
-    console.log(slides);
-    console.log(slides.length);
-    const dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {this.setState({slideIndex: 1})}    
-    if (n < 1) {this.setState({slideIndex: slides.length})}
-    for (i = 0; i < slides.length; i++) {
+      let i = 0;
+      const slides = document.getElementsByClassName("mySlides");
+    
+      if (n > slides.length) {this.setState({slideIndex: 1})}    
+      if (n < 1) {this.setState({slideIndex: slides.length})}
+      for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[this.state.slideIndex-1].style.display = "block";  
-    dots[this.state.slideIndex-1].className += " active";
-  }
-
-   plusSlides(n) {
-    this.showSlides(this.state.slideIndex += n);
-  }
+      }
   
-  currentSlide(n) {
-    this.showSlides(this.state.slideIndex = n);
-  }
+      slides[this.state.slideIndex-1].style.display = "block";  
+    }
+
+    plusSlides(n) {
+      this.showSlides(this.state.slideIndex += n);
+    }
 
   render() {
   return (
@@ -70,22 +62,16 @@ class Fleet extends Component {
             </div>
 
             <div className="mySlides fade">
-              <img src={king_air} ></img>
+              <img src={ka350_int} className="fleet_pics" ></img>
             </div>
 
             <div className="mySlides fade">
               <img src={king_air} ></img>
             </div>
 
-            <a className="prev" >&#10095;</a>
-            <a className="next">&#10095;</a>
+            <a className="prev" onClick={() => this.plusSlides(-1)}>&#10094;</a>
+            <a className="next" onClick={() => this.plusSlides(1)}>&#10095;</a>
 
-            </div>
-
-            <div style={{textAlign : 'center'}}>
-              <span className="dot" ></span> 
-              <span className="dot" ></span> 
-              <span className="dot" ></span> 
             </div>
           </div>
           <div className="fleet_content_divs">
