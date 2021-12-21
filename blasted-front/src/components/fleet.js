@@ -6,7 +6,7 @@ import ka350_int from '../images/ka350_int.jpg'
 
 class Fleet extends Component {
 
-  state = {slideIndex: 1};
+  state = {slideIndex: 0};
 
     componentDidMount() {
       this.showSlides(this.state.slideIndex);
@@ -16,18 +16,26 @@ class Fleet extends Component {
     showSlides(n) {
       let i = 0;
       const slides = document.getElementsByClassName("mySlides");
-    
-      if (n > slides.length) {this.setState({slideIndex: 1})}    
-      if (n < 1) {this.setState({slideIndex: slides.length})}
+      console.log(this.state.slideIndex);
+      
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
       }
-  
-      slides[this.state.slideIndex-1].style.display = "block";  
+      console.log(slides.length);
+      console.log(this.state.slideIndex);
+
+      slides[this.state.slideIndex].style.display = "block";  
+      console.log("its done");
     }
 
     plusSlides(n) {
-      this.showSlides(this.state.slideIndex += n);
+      const slidess = document.getElementsByClassName("mySlides");
+      console.log(slidess.length);
+      console.log("in plus section");
+      if (this.state.slideIndex + n > slidess.length-1) {this.setState({slideIndex: 0})
+      } else if (this.state.slideIndex + n < 0) {this.setState({slideIndex: slidess.length-1})
+      } else { this.setState({slideIndex: this.state.slideIndex + n })};
+      this.showSlides(this.state.slideIndex);
     }
 
   render() {
